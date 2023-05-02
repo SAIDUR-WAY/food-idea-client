@@ -16,7 +16,8 @@ import ChefDetails from "../pages/ChefDetails";
                },
                {
                     path: '/chefDetails',
-                    element: <ChefDetails></ChefDetails>
+                    element: <ChefDetails></ChefDetails>,
+                    
                }
                
           ]

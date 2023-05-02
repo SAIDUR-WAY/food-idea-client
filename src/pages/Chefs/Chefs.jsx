@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Chef from './Chef';
+import { useLoaderData } from 'react-router-dom';
 
 const Chefs = () => {
      const [chefs, setChefs] = useState([])
+     
+     console.log(chefs)
  
      useEffect(()=>{
-          fetch("chefs.json")
+          fetch("http://localhost:5000/chefs")
           .then(res => res.json())
           .then(data => setChefs(data))
      }, [])
