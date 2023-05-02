@@ -1,32 +1,32 @@
 [{
      "name": "Chef Content 1",
      "picture": "chef-picture.jpg",
-     "photoUrl": "https://example.com/chef-photo",
-     "yearsOfExperience": 10,
+     "photoUrl": "andira",
+     "yearsOfExperience": "10 years",
      "numberOfRecipes": 50,
      "likes": 1000,
      "id": "chef-1234-1"
 }, {
      "name": "Chef Content 2",
      "picture": "chef-picture.jpg",
-     "photoUrl": "https://example.com/chef-photo",
-     "yearsOfExperience": 10,
+     "photoUrl": "andira",
+     "yearsOfExperience": "10 years",
      "numberOfRecipes": 50,
      "likes": 1000,
      "id": "chef-1234-2"
 }, {
      "name": "Chef Content 3",
      "picture": "chef-picture.jpg",
-     "photoUrl": "https://example.com/chef-photo",
-     "yearsOfExperience": 10,
+     "photoUrl": "andira",
+     "yearsOfExperience": "10 years",
      "numberOfRecipes": 50,
      "likes": 1000,
      "id": "chef-1234-3"
 }, {
      "name": "Chef Content 4",
      "picture": "chef-picture.jpg",
-     "photoUrl": "https://example.com/chef-photo",
-     "yearsOfExperience": 10,
+     "photoUrl": "andira",
+     "yearsOfExperience": "10 years",
      "numberOfRecipes": 50,
      "likes": 1000,
      "id": "chef-1234-4"
@@ -34,8 +34,8 @@
 }, {
      "name": "Chef Content 5",
      "picture": "chef-picture.jpg",
-     "photoUrl": "https://example.com/chef-photo",
-     "yearsOfExperience": 10,
+     "photoUrl": "andira",
+     "yearsOfExperience": "10 years",
      "numberOfRecipes": 50,
      "likes": 1000,
      "id": "chef-1234-5"
@@ -43,8 +43,8 @@
 }, {
      "name": "Chef Content 6",
      "picture": "chef-picture.jpg",
-     "photoUrl": "https://example.com/chef-photo",
-     "yearsOfExperience": 10,
+     "photoUrl": "andira",
+     "yearsOfExperience": "10 years",
      "numberOfRecipes": 50,
      "likes": 1000,
      "id": "chef-1234-6"
