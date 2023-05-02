@@ -13,6 +13,7 @@ import Home from "../Home/Home/Home";
                     path: '/',
                     element: <Home></Home>
                }
+               
           ]
      }
    ])
