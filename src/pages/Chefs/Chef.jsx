@@ -8,32 +8,33 @@ import { Image } from 'react-bootstrap';
 const Chef = ({chef}) => {
      const [like, setLike] = useState(true)
      // console.log(chef)
-     const {name, numberOfRecipes, yearsOfExperience, photoUrl} = chef;
-     console.log(photoUrl)
+     const {id, chefName, numberOfRecipes, yearOfExperience, chefPicture, likes} = chef;
+     // console.log(photoUrl)
 
   
   return (
     <div className="col">
       <div className="card h-100 bg-dark p-2 text-dark bg-opacity-50">
-        {/* <img src={andira} className="card-img-top roundedCircle" alt="..." /> */}
-        <Image className='mx-auto' src={andira} style={{width: '200px', height: '200px'}} roundedCircle />
+        <img src={chefPicture} className="card-img-top roundedCircle w-auto h-50" alt="..." />
+        {/* <Image className='mx-auto'   /> */}
         <div className="card-body">
-          <h5 className="card-title">Name: {name}</h5>
+          <h5 className="card-title">Name: {chefName}</h5>
           <h5 className="card-title">
                Recipe Number: {numberOfRecipes}
             </h5>
           <h5 className="card-title">
-            Experience: {yearsOfExperience}
+            Experience: {yearOfExperience
+}
             </h5>
         </div>
         <div className="card-footer d-flex align-items-center">
           <div className='flex-grow-1'>
-               <button className='btn btn-warning text-white opacity-75 '><Link  className='text-decoration-none text-black' to='/chefDetails'>View Recipes</Link></button>
+               <button className='btn btn-warning text-white opacity-75 '><Link  className='text-decoration-none text-black' to={`/chefs/${id}`}>View Recipes</Link></button>
           </div>
           <div onClick={()=> setLike(!like)}>
-               
+              <span className='pe-2 pt-5'> {likes}</span>
                     {
-                    like ? <FaRegThumbsUp></FaRegThumbsUp> : <FaThumbsUp></FaThumbsUp>
+                    like ? <FaRegThumbsUp className='text-primary'></FaRegThumbsUp> : <FaThumbsUp className='text-primary'></FaThumbsUp>
                     }
                
           </div>

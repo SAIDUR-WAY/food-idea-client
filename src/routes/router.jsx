@@ -15,8 +15,10 @@ import ChefDetails from "../pages/ChefDetails";
                     element: <Home></Home>
                },
                {
-                    path: '/chefDetails',
+                    path: '/chefs/:id',
                     element: <ChefDetails></ChefDetails>,
+                    loader: ({params}) => fetch(`http://localhost:5000/chefs/${params.id}`)
+                    
                     
                }
                
