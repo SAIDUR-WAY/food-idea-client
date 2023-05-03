@@ -2,12 +2,13 @@ import React, { useContext, useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { AuthContext } from '../Provider/AuthProvider'
 import { toast } from 'react-hot-toast';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Register = () => {
      const [error, setError] = useState('');
      const [accepted, setAccepted] = useState(false);
+     const navigate = useNavigate()
 
      const {signUp, profileUpdate} = useContext(AuthContext);
 
@@ -42,7 +43,7 @@ const Register = () => {
                console.log(userReg);
                toast.success('Your are Successful Register!')
                profileUpdate(userReg, name, url)
-               
+               navigate('/')
           })
           .catch(error=> {
                // console.log(error.message)

@@ -14,7 +14,7 @@ const ChefDetails = () => {
   const {
       chefName, photoUrl, bio, recipesInfo, numberOfRecipes, yearOfExperience, likes
      } = chefdetails;
-//   console.log(recipesInfo)
+  console.log(recipesInfo)
 
   return (
     <section className='border border-text-black-50 rounded p-4'>

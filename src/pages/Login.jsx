@@ -2,10 +2,15 @@ import React, { useContext, useState } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { AuthContext } from '../Provider/AuthProvider'
 import { toast } from 'react-hot-toast';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [error, setError] = useState('');
+
+  const navigate = useNavigate()
+  const location = useLocation()
+  const path = location?.state?.from?.pathname || '/';
+  console.log(path)
 
 
   const {handelSignIn, googleSignIn, githubSignIn} = useContext(AuthContext);
@@ -26,6 +31,7 @@ const Login = () => {
             const loggedUser = result.user;
             // console.log(loggedUser)
             toast.success('LogIn Successful')
+            navigate(path, {replace: true})
           })
           .catch(error=>{
             // console.log(error.message)
@@ -42,6 +48,7 @@ const Login = () => {
         const loggedUser = result.user;
         console.log(loggedUser)
         toast.success('You are successful logIn')
+        navigate(path, {replace: true})
       })
       .catch(error=>{
         setError(error.message)
@@ -54,6 +61,7 @@ const Login = () => {
         const loggedUser = result.user;
         console.log(loggedUser)
         toast.success('You are successful logIn')
+        navigate(path, {replace: true})
       })
       .catch(error=>{
         setError(error.message)
