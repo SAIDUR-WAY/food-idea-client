@@ -12,7 +12,7 @@ const Banner = () => {
 
       <Card.ImgOverlay className="d-flex align-items-center justify-content-around">
         <div>
-          <Card.Title className="text-capitalize" style={{ fontSize: ' 52px' }}>
+          <Card.Title className="text-capitalize" style={{ fontSize: ' 82px' }}>
             Make Your <br /> <span className="text-warning">dream food</span>{' '}
             <br /> with us
           </Card.Title>

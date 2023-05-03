@@ -31,10 +31,10 @@ const Chef = ({chef}) => {
           <div className='flex-grow-1'>
                <button className='btn btn-warning text-white opacity-75 '><Link  className='text-decoration-none text-black' to={`/chefs/${id}`}>View Recipes</Link></button>
           </div>
-          <div onClick={()=> setLike(!like)}>
-              <span className='pe-2 pt-5'> {likes}</span>
+          <div className='d-flex align-items-center' onClick={()=> setLike(!like)}>
+             <p className='mb-0'> {likes}</p>
                     {
-                    like ? <FaRegThumbsUp className='text-primary'></FaRegThumbsUp> : <FaThumbsUp className='text-primary'></FaThumbsUp>
+                    like ? <FaRegThumbsUp className='text-primary fs-2 ps-2'></FaRegThumbsUp> : <FaThumbsUp className='text-primary fs-2 ps-2 '></FaThumbsUp>
                     }
                
           </div>
