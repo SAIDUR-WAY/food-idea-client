@@ -7,6 +7,7 @@ import ChefDetails from "../pages/ChefDetails";
 import ErrorPage from "../errorPage/ErrorPage";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Terms from "../pages/Terms";
 
    const router = createBrowserRouter([
      {
@@ -32,6 +33,10 @@ import Register from "../pages/Register";
                {
                     path: '/register',
                     element: <Register></Register>
+               },
+               {
+                    path: '/terms',
+                    element: <Terms></Terms>
                }
                
           ]
