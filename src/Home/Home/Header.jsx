@@ -14,8 +14,9 @@ const Header = () => {
             <Link className='px-4 text-decoration-none text-white' to="/chefs">Chef</Link>
           </Nav>
           <Nav className=''>
-            <Link className='px-4 text-decoration-none text-white' to="">More deets</Link>
-           <Button ><Link className=' text-decoration-none text-white' to=''>Login</Link></Button>
+            <Link className='px-4 text-decoration-none text-white' to="">your name</Link>
+            <Link className='px-4 text-decoration-none text-white' to="/register">Register</Link>
+           <Button ><Link className=' text-decoration-none text-white' to='/login'>Login</Link></Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
