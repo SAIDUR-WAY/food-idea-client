@@ -1,10 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const Header = () => {
+  const [userName, setUserName] = useState(false)
+  // console.log(userName)
    const {user, logOut} = useContext(AuthContext);
+
+ 
+ 
+    
+   
   
    
      return (
@@ -20,11 +27,16 @@ const Header = () => {
             <Link className=' text-decoration-none text-white' to='/login'>Login</Link>
           </Nav>
           <Nav className=''>
-            <div className='text-white'>
+            <div className='text-white '>
+              <div className=' d-inline'>
+
+              </div>
             {
               user ?
-               <> {user?.displayName}
-              <img className='mx-2 rounded-circle '  style={{width: '40px', height: '40px'}} src={user && user.photoURL} alt="" />
+              <> <span className={userName? '': 'd-none'}>{user?.displayName}</span>
+              <div onMouseOver={()=>setUserName(!userName)}
+                  onMouseOut={()=>setUserName(!userName)}
+                className='d-inline'><img className='mx-2 rounded-circle '  style={{width: '40px', height: '40px'}} src={user && user.photoURL} alt="" /></div>
               <Button onClick={logOut} className='mx-2'><Link className='text-white text-decoration-none'>LogOut</Link></Button>
 
                </> 
