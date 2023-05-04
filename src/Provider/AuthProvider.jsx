@@ -41,7 +41,6 @@ const AuthProvider = ({children}) => {
      const logOut = ()=>{
           signOut(auth)
           .then(()=>{
-               toast('Sign Out Success!')
           })
           .catch(error=>{
                console.log(error.message)

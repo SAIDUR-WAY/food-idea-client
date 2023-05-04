@@ -10,6 +10,7 @@ import Register from "../pages/Register";
 import Terms from "../pages/Terms";
 import PrivateRoutes from "./PrivateRoutes";
 import ItalianRecipe from "../pages/Recipe/ItalianRecipe";
+import Blog from "../pages/Blog/Blog";
 
    const router = createBrowserRouter([
      {
@@ -44,6 +45,10 @@ import ItalianRecipe from "../pages/Recipe/ItalianRecipe";
                     path:'/recipe',
                     element: <ItalianRecipe></ItalianRecipe>
 
+               },
+               {
+                    path: '/blog',
+                    element: <Blog></Blog>,
                }
                
           ]
