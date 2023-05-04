@@ -21,7 +21,7 @@ const Footer = () => {
                <h4>Follow us</h4>
                <FaFacebook className='font-icon fs-2 m-2' /> <FaTwitter className='font-icon fs-2 m-2'/> <FaYoutube className='font-icon fs-2 m-2'/>
                </Col>
-               <Col onSubmit={12}>
+               <Col sm={12}>
                <h4 className='pb-2'>Address</h4>
                <span className='d-block'>1230 khilket</span>
                <span>Dhaka a6-3333</span>
@@ -50,7 +50,7 @@ const Footer = () => {
             <Row className='text-start'>
                <Col sm={12}>
                   <h4 className='text-center p-2'>Contact Us</h4>
-               <Form onSubmit={handleSend}>
+               <Form onSubmit={handleSend} >
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         
         <Form.Control type="email" placeholder="name@example.com" />

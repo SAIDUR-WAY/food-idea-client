@@ -9,6 +9,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Terms from "../pages/Terms";
 import PrivateRoutes from "./PrivateRoutes";
+import ItalianRecipe from "../pages/Recipe/ItalianRecipe";
 
    const router = createBrowserRouter([
      {
@@ -38,6 +39,11 @@ import PrivateRoutes from "./PrivateRoutes";
                {
                     path: '/terms',
                     element: <Terms></Terms>
+               },
+               {
+                    path:'/recipe',
+                    element: <ItalianRecipe></ItalianRecipe>
+
                }
                
           ]

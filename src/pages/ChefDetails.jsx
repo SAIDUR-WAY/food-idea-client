@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Container } from 'react-bootstrap'
 import { useLoaderData } from 'react-router-dom'
 import RecipeInfo from './RecipeInfo'
 import { FaRegThumbsUp, FaThumbsUp } from 'react-icons/fa'
@@ -17,7 +17,7 @@ const ChefDetails = () => {
   console.log(recipesInfo)
 
   return (
-    <section className='border border-text-black-50 rounded p-4'>
+    <Container className='border border-text-black-50 rounded p-4'>
       <Card>
         <Card.Img  variant="top" src={photoUrl} />
         <Card.Body>
@@ -56,7 +56,7 @@ const ChefDetails = () => {
                ></RecipeInfo>)
           }
       </div>
-    </section>
+    </Container>
   )
 }
 

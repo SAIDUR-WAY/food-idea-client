@@ -71,7 +71,7 @@ const Login = () => {
   return (
     <section>
       <h2 className="fs-1 text-center fw-bold">Please LogIn</h2>
-      <Form onSubmit={handleLogIn} className="w-50 mx-auto fw-semibold border border-1 p-4 rounded">
+      <Form onSubmit={handleLogIn} className=" widther mx-auto fw-semibold border border-1 p-4 rounded">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control

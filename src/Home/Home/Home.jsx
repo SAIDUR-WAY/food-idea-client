@@ -1,6 +1,10 @@
 import React from 'react'
 import Banner from '../Banner'
 import Chefs from '../../pages/Chefs/Chefs'
+import ItalianRecipe from '../../pages/Recipe/ItalianRecipe'
+
+
+
 
 const Home = () => {
 
@@ -13,8 +17,10 @@ const Home = () => {
         <section className=' py-4'>
         <Chefs></Chefs>
         </section>
-        
-    
+        <section>
+          <ItalianRecipe></ItalianRecipe>
+        </section>
+  
     </>
   )
 }
