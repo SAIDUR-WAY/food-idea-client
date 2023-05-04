@@ -8,7 +8,7 @@ const Chefs = () => {
      // console.log(chefs)
  
      useEffect(()=>{
-          fetch("http://localhost:5000/chefs")
+          fetch(" https://food-idea-server-side-saidur-way.vercel.app/chefs")
           .then(res => res.json())
           .then(data => setChefs(data))
      }, [])

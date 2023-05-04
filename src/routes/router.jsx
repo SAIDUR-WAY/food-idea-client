@@ -23,7 +23,7 @@ import PrivateRoutes from "./PrivateRoutes";
                {
                     path: '/chefs/:id',
                     element: <PrivateRoutes><ChefDetails></ChefDetails></PrivateRoutes>,
-                    loader: ({params}) => fetch(`http://localhost:5000/chefs/${params.id}`)
+                    loader: ({params}) => fetch(` https://food-idea-server-side-saidur-way.vercel.app/chefs/${params.id}`)
                     
                     
                },

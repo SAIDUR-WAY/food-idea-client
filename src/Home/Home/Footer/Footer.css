@@ -1,0 +1,14 @@
+.list-item li{
+     list-style-type: none;
+     
+}
+.list-item a{
+     text-decoration: none;
+     color: white;
+}
+.list-item a:hover{
+     color:#0A5ED7;
+}
+.font-icon:hover{
+     color: #0A5ED7;
+}
