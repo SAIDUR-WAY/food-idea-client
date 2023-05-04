@@ -2,7 +2,7 @@ import { Rating } from '@smastrom/react-rating';
 import React from 'react';
 
 const Recipe = ({data}) => {
-  console.log(data)
+  // console.log(data)
   const {id, name, img, shortDescription, rating}= data
      return (
 <div className="card mb-3 col-md-6" style={{maxWidth:" 540px"}}>

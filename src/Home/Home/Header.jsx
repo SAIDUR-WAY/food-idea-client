@@ -2,28 +2,25 @@ import React, { useContext, useState } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
+import ActiveLink from '../../ActiveLink/ActiveLink';
 
 const Header = () => {
   const [userName, setUserName] = useState(false)
   // console.log(userName)
    const {user, logOut} = useContext(AuthContext);
 
- 
- 
-    
-   
-  
    
      return (
+      
           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='my-3'>
       <Container className='fs-5  '>
         <Navbar.Brand className='fs-3 ps-4'><span className='text-warning'>Food</span> Idea</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto sm">
-            <Link className='px-4 text-decoration-none text-white' to="/">Home</Link>
-            <Link className='px-4 text-decoration-none text-white' to='/blog'>Blog</Link>
-            <Link className='px-4 text-decoration-none text-white' to="/register">Register</Link>
+          <Nav className='mx-auto'>
+            <ActiveLink className='px-4 text-decoration-none text-white'  to="/" >Home</ActiveLink>
+            <ActiveLink className='px-4 text-decoration-none text-white' to="/blog">Blog</ActiveLink>
+            <ActiveLink className='px-4 text-decoration-none text-white' to="/register">Register</ActiveLink>
           </Nav>
           <Nav className=''>
             <div className='text-white '>
