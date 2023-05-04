@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from '../Banner'
 import Chefs from '../../pages/Chefs/Chefs'
 import ItalianRecipe from '../../pages/Recipe/ItalianRecipe'
+import FoodEvent from '../../pages/FoodEvent'
 
 
 
@@ -19,6 +20,9 @@ const Home = () => {
         </section>
         <section>
           <ItalianRecipe></ItalianRecipe>
+        </section>
+        <section>
+          <FoodEvent></FoodEvent>
         </section>
   
     </>

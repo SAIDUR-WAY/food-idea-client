@@ -16,7 +16,7 @@ const Chefs = () => {
 
      return (
           <>
-          <h2 className='text-warning text-center fs-2 pb-4 text-capitalize'>Famous Italian Chefs {chefs.length}</h2>
+          <h2 className='text-info text-center fs-2 pb-4 text-capitalize'>Famous Italian Chefs {chefs.length}</h2>
           <div className="row row-cols-1 row-cols-md-3 g-4">
                {
                     chefs.map(chef => <Chef

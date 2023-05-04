@@ -14,7 +14,7 @@ const Chef = ({chef}) => {
   
   return (
     <div className="col">
-      <div className="card h-100 bg-dark p-2 text-dark bg-opacity-50">
+      <div className="card h-100  p-2 text-dark" style={{backgroundColor: "#D6EAF8 "}}>
         <img src={chefPicture} className="card-img-top roundedCircle w-auto h-50" alt="..." />
         {/* <Image className='mx-auto'   /> */}
         <div className="card-body">
@@ -29,7 +29,7 @@ const Chef = ({chef}) => {
         </div>
         <div className="card-footer d-flex align-items-center">
           <div className='flex-grow-1'>
-               <button className='btn btn-warning text-white opacity-75 '><Link  className='text-decoration-none text-black' to={`/chefs/${id}`}>View Recipes</Link></button>
+               <button className='btn btn-primary text-white opacity-75 '><Link  className='text-decoration-none text-white' to={`/chefs/${id}`}>View Recipes</Link></button>
           </div>
           <div className='d-flex align-items-center' onClick={()=> setLike(!like)}>
              <p className='mb-0'> {likes}</p>

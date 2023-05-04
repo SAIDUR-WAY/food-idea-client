@@ -48,7 +48,7 @@ const ChefDetails = () => {
         </Card.Body>
           
       </Card>
-      <div className='d-flex justify-content-around my-4'>
+      <div className='md-d-flex justify-content-around my-4'>
           {
                recipesInfo.map(recipe => <RecipeInfo
                key={recipe._id}

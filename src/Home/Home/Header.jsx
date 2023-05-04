@@ -20,10 +20,10 @@ const Header = () => {
         <Navbar.Brand className='fs-3 ps-4'><span className='text-warning'>Food</span> Idea</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto">
+          <Nav className="mx-auto sm">
             <Link className='px-4 text-decoration-none text-white' to="/">Home</Link>
+            <Link className='px-4 text-decoration-none text-white' to='/blog'>Blog</Link>
             <Link className='px-4 text-decoration-none text-white' to="/register">Register</Link>
-            <Link className=' text-decoration-none text-white' to='/blog'>Blog</Link>
           </Nav>
           <Nav className=''>
             <div className='text-white '>

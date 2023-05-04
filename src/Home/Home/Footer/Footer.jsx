@@ -18,13 +18,14 @@ const Footer = () => {
                <Row>
                <Col className='pb-4' sm={12}> 
                <img width={40} height={40} src={coffee} alt="" />
-               <h4>Follow us</h4>
+               <h4 className='pt-3'>Follow us</h4>
                <FaFacebook className='font-icon fs-2 m-2' /> <FaTwitter className='font-icon fs-2 m-2'/> <FaYoutube className='font-icon fs-2 m-2'/>
                </Col>
                <Col sm={12}>
                <h4 className='pb-2'>Address</h4>
-               <span className='d-block'>1230 khilket</span>
-               <span>Dhaka a6-3333</span>
+               <span className='d-block'>Consorzio Nazionale Imballaggi</span>
+               <span>Via Pompeo Litta, 5</span> <br/>
+               <span>20122 Milano /ITALY</span>
                </Col>
 
                </Row>
@@ -32,7 +33,7 @@ const Footer = () => {
             <Col md={4}>
             <Row>
                <Col sm={12}>
-                    <h4 className='pb-2'>Food Items</h4>
+                    <h4 className='pb-2 pt-4'>Food Items</h4>
                     <ul className= 'list-item fs-5 text-start '>
                          <li><Link>Pasta</Link></li>
                          <li><Link>Risotto</Link></li>

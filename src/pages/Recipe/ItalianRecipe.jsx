@@ -14,7 +14,7 @@ const ItalianRecipe = () => {
      }, [])
      return (
           <Container className='border border-1 '>
-          <h2 className='text-center fw-bold'>Best Italian Recipes</h2>
+          <h2 className='text-center text-info fw-bold py-4'>Best Italian Recipes</h2>
           <div className='row g-2 mx-auto'>
                {
                     recipes.map(data => <Recipe
