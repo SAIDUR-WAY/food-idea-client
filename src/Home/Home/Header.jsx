@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
-import ActiveLink from '../../ActiveLink/ActiveLink';
+
 
 const Header = () => {
   const [userName, setUserName] = useState(false)
@@ -18,9 +18,9 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className='mx-auto'>
-            <ActiveLink className='px-4 text-decoration-none text-white'  to="/" >Home</ActiveLink>
-            <ActiveLink className='px-4 text-decoration-none text-white' to="/blog">Blog</ActiveLink>
-            <ActiveLink className='px-4 text-decoration-none text-white' to="/register">Register</ActiveLink>
+            <Link className='px-4 text-decoration-none text-white'  to="/" >Home</Link>
+            <Link className='px-4 text-decoration-none text-white' to="/blog">Blog</Link>
+            <Link className='px-4 text-decoration-none text-white' to="/register">Register</Link>
           </Nav>
           <Nav className=''>
             <div className='text-white '>
