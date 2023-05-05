@@ -5,10 +5,10 @@
 .bg {
      background-image: url('./assets/bg-banner.jpg');
      max-width: 100%;
-     height: 100%;
+     height: 100vh;
      background-size: cover;
-     background-color: black;
-     opacity: 50;
+     /* background-color: black; */
+     /* opacity: 50; */
      box-sizing: border-box;
 }
 section {
@@ -20,4 +20,12 @@ section {
      .widther {
           width: 50%;
      }
+}
+/* show profile name */
+.showInSite{
+     position:absolute;
+     right: 145px;
+     width: 200px;
+     top: 2px;
+     text-align: right;
 }

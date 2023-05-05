@@ -10,7 +10,7 @@ const MainLayout = () => {
      return (
           <Container>
                <Header></Header>
-               <div>{navigation.state === "loading" ? <Spinner animation="border" variant="primary" /> : ''}</div>
+               <div>{navigation.state === "loading" ? <div><Spinner animation="border" variant="primary" /></div> : ''} </div>
                <Outlet></Outlet>
                <Footer></Footer>
                <Toaster></Toaster>

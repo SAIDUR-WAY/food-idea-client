@@ -5,7 +5,7 @@ import { toast } from 'react-hot-toast';
 
 
 
-export const AuthContext = createContext(null);
+export const AuthContext = createContext();
 const googleProvider = new GoogleAuthProvider();
 const githubProvider = new GithubAuthProvider();
 
@@ -13,7 +13,7 @@ const auth = getAuth(app);
 // const [user, setUser] = useState(null)
 
 const AuthProvider = ({children}) => {
-     const [user, setUser] = useState([])
+     const [user, setUser] = useState(null)
      const [loading, setLoading] = useState(true);
      
      //signUp in firebase

@@ -1,11 +1,14 @@
 import React,{Suspense, lazy} from 'react'
 import Banner from '../Banner'
 // import Chefs from '../../pages/Chefs/Chefs'
-// import ItalianRecipe from '../../pages/Recipe/ItalianRecipe'
+import ItalianRecipe from '../../pages/Recipe/ItalianRecipe'
 import FoodEvent from '../../pages/FoodEvent'
+import { Spinner } from 'react-bootstrap'
 
+
+//lazy loading import
 const Chefs = lazy(()=>import('../../pages/Chefs/Chefs'))
-const ItalianRecipe = lazy(()=> import('../../pages/Recipe/ItalianRecipe'))
+// const ItalianRecipe = lazy(()=> import('../../pages/Recipe/ItalianRecipe'))
 // const Banner = lazy(()=> import('../Banner'))
 
 
@@ -18,21 +21,15 @@ const Home = () => {
     <>
       
         <section>
-        <Suspense fallback={<div>Please Loading....</div>}>
         <Banner></Banner>
-        </Suspense>
         </section>
         <section className=' py-4'>
-          <Suspense fallback={<div>Please Loading....</div>}>
+          <Suspense fallback={<Spinner animation="border" variant="primary" />}>
           <Chefs></Chefs>
           </Suspense>
-        
         </section>
         <section>
-          <Suspense fallback={<div>Please Loading...</div>}>
           <ItalianRecipe></ItalianRecipe>
-          </Suspense>
-          
         </section>
         <section>
           <FoodEvent></FoodEvent>

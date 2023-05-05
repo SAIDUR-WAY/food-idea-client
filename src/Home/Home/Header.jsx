@@ -25,21 +25,22 @@ const Header = () => {
           </Nav>
           <Nav className=''>
             <div className='text-white '>
-              <div className=' d-inline'>
+              <div className=' position-relative d-inline'>
 
-              </div>
+              
             {
               user ?
-              <> <span className={userName? '': 'd-none'}>{user?.displayName}</span>
-              <div onMouseOver={()=>setUserName(!userName)}
-                  onMouseOut={()=>setUserName(!userName)}
-                className='d-inline'><img className='mx-2 rounded-circle '  style={{width: '40px', height: '40px'}} src={user && user.photoURL} alt="" /></div>
+              <> <span className={userName? 'showInSite': 'd-none'}><span>{user?.displayName}</span></span>
+              <div onMouseEnter={()=>setUserName(true)}
+                  onMouseLeave={()=>setUserName(false)}
+                className='d-inline'><img className=' rounded-circle '  style={{width: '40px', height: '40px'}} src={user && user.photoURL} alt="" /></div>
               <Button onClick={logOut} className='mx-2'><Link className='text-white text-decoration-none'>LogOut</Link></Button>
 
                </> 
                : 
                <Button ><Link className=' text-decoration-none text-white' to='/login'>Login</Link></Button>
             }
+            </div>
             </div>
 
 

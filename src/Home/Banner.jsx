@@ -1,15 +1,15 @@
 import React from 'react'
 import { Card, Container } from 'react-bootstrap'
 import chefImg from '../assets/pngwing.com (6).png'
-import banner from '../assets/bg-banner.jpg'
+// import bannarimg from '../assets/bg-banner.jpg'
 
 const Banner = () => {
   return (
-    <Container className=''>
+    <Container>
        <Card className=" bg-dark text-white">
-      {/* <Card.Img src={banner} alt="Card image" /> */}
-      <div className=" bg bg-dark">
-        <div className="vh-100 bg-dark opacity-75">
+      {/* <Card.Img src={bannarimg} alt="Card image" /> */}
+      <div className="bg bg-dark">
+        <div className=" vh-100 bg-dark opacity-75">
 
         </div>
         <Card.ImgOverlay className="d-md-flex  align-items-center justify-content-around">

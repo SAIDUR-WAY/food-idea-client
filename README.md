@@ -8,9 +8,9 @@
 - A password and email registation added
 - Popup google and github login in firebase use
 
--- Application first butifull navbar added
--- nevber view profile picture and name 
--- Beautiful banner added section
+- Application first butifull navbar added
+- nevber view profile picture and name 
+- Beautiful banner added section
 
 
 
