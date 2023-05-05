@@ -10,7 +10,7 @@ const DownloadPage = ({rootElementId, downloadFileName}) => {
           .then(canvas=>{
                const imgData = canvas.toDataURL('image/png')
                const pdf = new jsPDF("p", "pt", "a3")
-               pdf.addImage(imgData, "JPEG", 10, 50)
+               pdf.addImage(imgData, "JPEG", 0, 0)
                pdf.save(`${downloadFileName}`)
           })
      }

@@ -43,7 +43,7 @@ const AuthProvider = ({children}) => {
           .then(()=>{
           })
           .catch(error=>{
-               console.log(error.message)
+               // console.log(error.message)
           })
      }
 
@@ -63,7 +63,7 @@ const AuthProvider = ({children}) => {
      useEffect(()=>{
         const unsubscribe = onAuthStateChanged(auth, currentUser=>{
                 setUser(currentUser)
-               console.log(currentUser)
+               // console.log(currentUser)
                setLoading(false)
           })
           return unsubscribe;

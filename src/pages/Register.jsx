@@ -23,13 +23,15 @@ const Register = () => {
           const password = form.password.value;
           const confirm = form.confirm.value;
           const url = form.url.value
-          console.log(name, email, password, url)
+          
 
           //conditional statement
           if(password !== confirm){
                setError('Do not match in password!')
+               return
           }else if(password.length < 6){
                setError('Please minimum 6 character long! ')
+               return
           }else if(!/(?=.*[A-Z])/.test(password)){
                setError('Please one UpperCase latter add in password')
                return
@@ -58,7 +60,7 @@ const Register = () => {
   return (
     <div >
      <h2 className='fs-1 text-center fw-bold'>Please Register</h2>
-      <Form onSubmit={handleSubmit} className=' widther mx-auto fw-semibold border border-1 p-4 rounded'>
+      <Form onSubmit={handleSubmit} className=' widther mx-auto fw-semibold border border-1 p-4 my-4 rounded'>
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" name='name' placeholder="Enter email" />
@@ -98,10 +100,10 @@ const Register = () => {
         <div className='mt-4'>
           <Link className= ' text-primary' to='/login'>Already Have an account</Link>
         </div>
-      </Form>
-      <p className='text-center text-danger'>
+      <p className='text-center mt-4 text-danger'>
           {error}
       </p>
+      </Form>
     </div>
   )
 }

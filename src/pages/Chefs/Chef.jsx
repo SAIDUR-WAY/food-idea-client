@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaRegThumbsUp, FaThumbsUp } from 'react-icons/fa';
-import andira from '../../assets/andira-small.jpg'
-import { Image } from 'react-bootstrap';
+// import andira from '../../assets/andira-small.jpg'
+// import { Image } from 'react-bootstrap';
 
 
 const Chef = ({chef}) => {
@@ -29,7 +29,7 @@ const Chef = ({chef}) => {
         </div>
         <div className="card-footer d-flex align-items-center">
           <div className='flex-grow-1'>
-               <button className='btn btn-primary text-white opacity-75 '><Link  className='text-decoration-none text-white' to={`/chefs/${id}`}>View Recipes</Link></button>
+               <button className='btn btn-primary text-white opacity-75 '><Link  className='text-decoration-none text-white' to={`/${id}`}>View Recipes</Link></button>
           </div>
           <div className='d-flex align-items-center' onClick={()=> setLike(!like)}>
              <p className='mb-0'> {likes}</p>

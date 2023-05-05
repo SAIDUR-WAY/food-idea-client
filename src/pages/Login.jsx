@@ -10,7 +10,7 @@ const Login = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const path = location?.state?.from?.pathname || '/';
-  console.log(path)
+  // console.log(path)
 
 
   const {handelSignIn, googleSignIn, githubSignIn} = useContext(AuthContext);
@@ -24,7 +24,7 @@ const Login = () => {
           const form = event.target;
           const email =form.email.value;
           const password = form.password.value;
-          console.log(name, email, password)
+          
 
           handelSignIn(email, password)
           .then(result=>{
@@ -46,7 +46,7 @@ const Login = () => {
       googleSignIn()
       .then(result=>{
         const loggedUser = result.user;
-        console.log(loggedUser)
+        // console.log(loggedUser)
         toast.success('You are successful logIn')
         navigate(path, {replace: true})
       })
@@ -59,7 +59,7 @@ const Login = () => {
       githubSignIn()
       .then(result=>{
         const loggedUser = result.user;
-        console.log(loggedUser)
+        // console.log(loggedUser)
         toast.success('You are successful logIn')
         navigate(path, {replace: true})
       })

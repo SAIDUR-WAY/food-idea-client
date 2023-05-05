@@ -23,7 +23,7 @@ import Blog from "../pages/Blog/Blog";
                     element: <Home></Home>
                },
                {
-                    path: '/chefs/:id',
+                    path: '/:id',
                     element: <PrivateRoutes><ChefDetails></ChefDetails></PrivateRoutes>,
                     loader: ({params}) => fetch(` https://food-idea-server-side-saidur-way.vercel.app/chefs/${params.id}`)
                     

@@ -14,7 +14,7 @@ const ChefDetails = () => {
   const {
       chefName, photoUrl, bio, recipesInfo, numberOfRecipes, yearOfExperience, likes
      } = chefdetails;
-  console.log(recipesInfo)
+  // console.log(recipesInfo)
 
   return (
     <Container className='border border-text-black-50 rounded p-4'>
@@ -50,7 +50,7 @@ const ChefDetails = () => {
       </Card>
       <div className='md-d-flex justify-content-around my-4'>
           {
-               recipesInfo.map(recipe => <RecipeInfo
+               recipesInfo?.map(recipe => <RecipeInfo
                key={recipe._id}
                recipe = {recipe}
                ></RecipeInfo>)
